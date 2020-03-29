@@ -1,0 +1,84 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+.wrapper{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.wrapper, .wrapper:after{
+    position:fixed;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: 0;
+}
+
+.wrapper li span{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-size: cover;
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    opacity: 0;
+    z-index: 0;
+    backface-visibility: hidden;
+    animation: animate 25s linear infinite 0s;
+}
+
+.wrapper li:nth-child(1) span{
+    background-image: url(Sunny.jpg);
+}
+
+.wrapper li:nth-child(2) span{
+    background-image: url(Skyler.jpg);
+    animation-delay: 5s;
+}
+
+.wrapper li:nth-child(3) span{
+    background-image: url(Piks.jpg);
+    animation-delay: 5s;
+}
+
+.wrapper li:nth-child(4) span{
+    background-image: url(kiwisunny.jpg);
+    animation-delay: 10s;
+}
+
+.wrapper li:nth-child(5) span{
+    background-image: url(Kiwiball.jpg);
+    animation-delay: 15s;
+}
+
+.wrapper li:nth-child(6) span{
+    background-image: url(Sky.jpg);
+    animation-delay: 20s;
+}
+
+@keyframes animate{
+    0%{
+        opacity: 0;
+    }
+    
+        8%{
+            opacity: 1;
+        }
+        
+            17%{
+                opacity: 1;
+            }
+            
+                25%{
+                    opacity: 0;
+                }
+                
+                  100%{
+                        opacity: 0;
+                    }
+}

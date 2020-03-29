@@ -1,0 +1,32 @@
+body {
+    background-image: url("trio.jpg");
+    background-size: cover;
+    background-repeat:   no-repeat;
+    background-position: center center; 
+   
+}
+
+#container{
+    background-color: lightskyblue;
+    border: 5px solid whitesmoke;
+    height: 275px;
+    width: 750px;
+    margin: 150px auto;
+    text-align: center;
+    opacity: 0.8;
+}
+
+#btn{
+    margin: 50px auto;
+    height: 50px;
+    width: 250px;
+    font-size: 27px;
+    background-color: yellowgreen;
+    opacity: 0.9;
+}
+
+#output{
+    margin: 25px auto;
+    font-size: 26px;
+    color: white;
+}
